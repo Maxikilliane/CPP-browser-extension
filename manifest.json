@@ -1,0 +1,73 @@
+{
+  "author": "Ortloff, Windl",
+  "description": "Shows contextual privacy policy information on a variety of sites and is part of a diary study on this topic.",
+  "manifest_version": 2,
+  "name": "ContextualPP",
+  "version": "1.3",
+  "homepage_url": "https://github.com/blueCat11/improving_cpp",
+  "icons": {
+    "48": "icons/icon_4_bigger.png"
+  },
+
+  "content_scripts": [{
+      "matches": ["*://*/*"],
+      "include_globs": ["*://www.google.*/*", "*://www.google.*/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/google_cpp.js"],
+      "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/youtube_cpp.js"],
+      "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+      "matches": ["*://*.facebook.com/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/facebook_cpp.js"],
+      "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+        "matches": ["*://*/*"],
+      "include_globs": ["*://*.amazon.de/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/amazon_cpp.js"],
+      "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+      "matches": ["*://*.ebay.de/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/ebay_cpp.js"],
+      "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+      "matches": ["*://*.ebay-kleinanzeigen.de/*"],
+      "js": ["libraries/HtmlSanitizer.js", "content_scripts/ebay_kleinanzeigen_cpp.js"],
+      "css": ["libraries/uikit.min.css","content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    },
+    {
+        "matches": ["*://twitter.com/*"],
+        "js": ["libraries/HtmlSanitizer.js", "content_scripts/twitter_cpp.js"],
+        "css": ["libraries/uikit.min.css", "content_scripts/stylesheets/cpp_maxi.css", "diary/diary.css"]
+    }
+  ],
+
+  "background": {
+    "scripts": ["libraries/jquery.js","background/background_general.js", "background/background_facebook.js", "libraries/HtmlSanitizer.js"],
+    "persistent": true
+  },
+  "content_security_policy": "script-src 'self' https://cdnjs.cloudflare.com; object-src 'self'",
+  "permissions": [
+
+    "activeTab", "storage", "management", "notifications", "downloads"
+
+  ],
+
+
+  "browser_action": {
+    "default_icon": "icons/icon_4_bigger.png",
+    "default_title": "ContextualPP",
+    "default_popup": "popup/cpp_settings.html"
+  },
+
+  "web_accessible_resources": [
+   "diary/diary.html", "icons/*.png"
+  ]
+
+}

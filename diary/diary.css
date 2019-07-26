@@ -1,0 +1,270 @@
+ /* The Modal (background) */
+ .modal-cpp {
+   display: none;
+   /* Hidden by default */
+   position: fixed !important;
+   /* Stay in place */
+   z-index: 10000 !important;
+   /* Sit on top */
+   left: 0;
+   top: 0 !important;
+   width: 100% !important;
+   /* Full width */
+   height: 100% !important;
+   /* Full height */
+   overflow: auto;
+   /* Enable scroll if needed */
+   background-color: rgb(0, 0, 0);
+   /* Fallback color */
+   background-color: rgba(0, 0, 0, 0.4);
+   /* Black w/ opacity */
+ }
+
+.modal-cpp li{
+  font-size: 13px !important;
+}
+ .modal-cpp p {
+   /* color: #666666 !important; */
+   font-family: arial,sans-serif;
+font-size: 13px !important;
+ }
+
+ .uk-grid-small {
+   margin-bottom: -2em !important;
+ }
+
+ .modal-header-cpp h3 {
+   color: black !important;
+   margin-top: 1em;
+   font-weight: 700;
+   font-size: 17px;
+   line-height: 1.255;
+ }
+
+ /* Modal Content/Box */
+ .modal-content-cpp {
+   background-color: #fefefe;
+   margin: 15% auto;
+   /* 15% from the top and centered */
+   border: 1px solid #888;
+   width: 60%;
+   /* Could be more or less, depending on screen size */
+ }
+
+ .modal-body-cpp {
+   margin-left: 3em;
+   margin-right: 3em;
+ }
+
+ .modal-content-cpp p {
+   margin-block-start: 0.5em;
+   margin-block-end: 0.5em;
+ }
+
+ /* The Close Button */
+ #closeDiary {
+   margin-left: auto;
+   color: #aaa;
+   float: right;
+   font-size: 28px;
+   font-weight: bold;
+ }
+
+ #closeDiary:hover,
+ #closeDiary:focus {
+   color: black;
+   text-decoration: none;
+   cursor: pointer;
+ }
+
+ .uk-button-default:focus, .uk-button-default:hover {
+   background-color: #ffdfb3 !important;
+   color: #F18C00 !important;
+   border-color: #F18C00 !important;
+ }
+
+ .uk-button-default {
+   background-color: transparent !important;
+   color: #F18C00 !important;
+   font-weight: 600;
+   border: 2px solid #F18C00 !important;
+   margin-bottom: 2em;
+   box-shadow: inset 0px 0px 0px 0px #FFFFFF;
+ }
+
+ .uk-text-bold {
+   color: black !important;
+ }
+
+ .modal-header-cpp {
+   margin-left: 3em;
+   margin-right: 3em;
+   padding-top: 0px;
+   padding-bottom: 0px;
+   display: flex;
+   align-items: center;
+ }
+
+ .modal-header-cpp img {
+   margin-top: 2em;
+   margin-right: 1em;
+   margin-left: 1em;
+   width: 60px !important;
+   height: 60px !important;
+   margin-bottom: 1.5em;
+ }
+
+ #introduction {
+   margin-top: 1em;
+   color: black;
+ }
+
+ .question {
+   margin-bottom: 1em;
+ }
+
+ #lastQuestion {
+   margin-bottom: 0px;
+ }
+
+ #relevanceQuestion {
+   margin-bottom: 0px;
+ }
+
+ #relevance {
+   margin-top: -10px;
+ }
+
+ #displayedCppText {
+   font-family: inherit;
+   font-size: 1em;
+   line-height: 1em;
+   padding-right: 0px;
+   padding-bottom: 0px;
+   width: 100%;
+   border: solid;
+   border-color: #F18C00;
+   padding-left: 10px;
+   /* background: #F18C00; */
+   background: white;
+   margin-top: 10px;
+   padding-bottom: 0.5em;
+   position: relative;
+ }
+
+ #displayedCppText ul {
+   display: block;
+   margin-block-start: 0.5em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+   list-style-type: disc;
+ }
+
+ #displayedCppText img {
+   display: none;
+ }
+
+ #displayedCppText p {
+   color: black !important;
+   margin-top: 0px !important;
+ }
+
+ hr {
+   margin-top: 0px;
+ }
+
+ #displayedCppText h3 {
+   margin-top: 0.5em !important;
+   margin-bottom: 0.2em !important;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 1.255;
+   color: black !important;
+ }
+
+ #displayedCppText li {
+   padding-bottom: 5px;
+   font-size: 13px !important;
+   line-height: 1;
+   list-style: disc !important;
+ }
+
+ #displayedCppText ul {
+   margin-top: 0px !important;
+   padding-top: 0px;
+   margin-bottom: -0.1em !important;
+   color: black;
+   display: block;
+   margin-block-start: 0.5em;
+   margin-block-end: 1em;
+   margin-inline-start: 0px;
+   list-style-type: disc !important;
+   margin-inline-end: 0px;
+   padding-inline-start: 40px;
+ }
+
+ /* Stuff for likert items*/
+ .likert {
+   padding-inline-start: 0px !important;
+   float: left;
+   list-style-type: none;
+   padding-top: 0;
+   padding-bottom: 3em;
+   margin: 0;
+   color: #666666;
+ }
+
+ textarea {
+   width: 100% !important;
+ }
+
+ .likert li {
+   padding-right: 5px;
+   display: block;
+   float: left;
+   color: black;
+ }
+
+ .likert li input {
+   margin-top: 0.5px !important;
+   margin-left: 2px !important;
+   margin-right: 2px !important;
+   border: 1px solid #ccc !important;
+   padding: 4px !important;
+   width: 16px !important;
+   height: 16px !important;
+ }
+
+ #likertResponses {
+   overflow: auto;
+   display: inline-block;
+   margin-top: 1em;
+ }
+
+ .spacingBottom {
+   margin-bottom: 4px;
+   font-size: 13px !important;
+ }
+
+ .no-spacingBottom {
+   font-size: 13px !important;
+ }
+
+ #willChange {
+   display: block;
+   color: black;
+   padding-left: 0px;
+   font-size: 13px !important;
+   margin-top: 5px;
+ }
+
+ #willChange div input {
+   padding: 5px;
+   margin-right: 10px;
+   border: 1px solid #ccc !important;
+   padding: 4px !important;
+   width: 16px !important;
+   height: 16px !important;
+ }

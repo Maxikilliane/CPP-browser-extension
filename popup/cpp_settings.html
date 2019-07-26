@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="cpp_settings.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="../libraries/uikit.min.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="heading">
+      <img src="../icons/icon_bigger.png"></img>
+      <h3>ContextualPP</h3>
+    </div>
+    <hr>
+    <div>
+      <p>Dieses Browserplugin ermöglicht es Ihnen Informationen aus den Datenschutzerklärungen einiger Webseiten, die Sie besuchen, direkt in Ihrem Benutzungskontext zu bekommen: Dann wenn Ihre Daten erhoben oder verarbeitet werden.</p>
+    </div>
+
+    <div>
+      <div class="subheading">
+        <h4><span uk-icon="icon: comments; ratio: 1.3"></span>&nbsp;&nbsp;Feedback</h4>
+      </div>
+      <form name="feedbackForm">
+        <p>Sie können in diesem Formular jeder Zeit Feedback zum Plugin oder den kontextuellen Datenschutzerklärungen abgeben.</p>
+        <div id="likertResponses">
+          <p class="uk-text-bold">Wie nützlich finden Sie die kontextuellen Datenschutzerklärungen?</p>
+          <ul class="likert">
+            <li>nicht nützlich</li>
+            <li><input <input class="uk-radio" id="radHelpfulStart" type="radio" name="Helpful" value="1" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="2" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="3" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="4" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="5" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="6" /></li>
+            <li><input <input class="uk-radio" id="radHelpfulEnd" type="radio" name="Helpful" value="7" /></li>
+            <li>sehr nützlich</li>
+          </ul>
+        </div>
+        <div>
+          <p class="uk-text-bold">Welche Probleme hatten Sie mit kontextuellen Datenschutzerklärungen?</p>
+          <textarea class="uk-textarea" id="problem" name="problem" rows="3" cols="50" wrap="physical"></textarea>
+        </div>
+        <div>
+          <p class="uk-text-bold">Welche Verbesserungsvorschläge haben Sie für kontextuelle Datenschutzerklärungen?</p>
+          <textarea class="uk-textarea" id="improvement" name="improvement" rows="3" cols="50" wrap="physical"></textarea>
+        </div>
+        <div>
+          <button type="button" id="feedbackButton" class="uk-button uk-button-default"><span uk-icon="mail"></span>&nbsp;&nbsp;Feedback abschicken</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="error-content" class="hidden">
+    <p>Entschuldigung, das Plugin funktioniert auf dieser Seite nicht.</p>
+  </div>
+  <script src="cpp_settings.js"></script>
+</body>
+
+</html>

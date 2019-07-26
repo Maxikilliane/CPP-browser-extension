@@ -1,0 +1,56 @@
+  <!DOCTYPE html>
+  <!-- The Modal -->
+  <div id="diaryModal" class="modal-cpp uk-width-1-2@m">
+
+    <!-- Modal content -->
+    <!-- Modal content -->
+    <div class="modal-content-cpp">
+      <div class="modal-header-cpp">
+        <img id="cpp_logo"></img>
+        <h3>ContextualPP - Fragen zum Plugin</h3>
+        <span id="closeDiary">&times;</span>
+      </div>
+      <hr>
+      <div class="modal-body-cpp">
+        <p id="introduction">Bitte beantworten Sie die folgenden Fragen zu Ihrer Meinung bezüglich der Datenschutzinformation, die Sie gerade gesehen haben. Diese hat folgenden Text:</p>
+        <p id="displayedCppText"></p>
+        <form class="uk-grid-small">
+          <div class="uk-width-1-1 question">
+            <p class="uk-text-bold">Wie beurteilen Sie den Nutzen der gerade gesehenen Datenschutzinformation?</p>
+            <textarea rows="2" cols="50" name="use" id="use" class="uk-textarea"></textarea>
+          </div>
+          <div class="uk-width-1-1 question">
+            <p class="uk-text-bold">Denken Sie, Sie werden Ihr Verhalten aufgrund der angezeigten Datenschutzinformation ändern?</p>
+            <div name="willChange" id="willChange">
+              <div class="spacingBottom"><input type="radio" name="change" value="yes" class="uk-radio"> Ja</input></div>
+              <div class="no-spacingBottom"><input type="radio" name="change" value="no" class="uk-radio"> Nein</input></div>
+            </div>
+          </div>
+          <div class="uk-width-1-1 question">
+            <p class="uk-text-bold">Wenn ja, was werden Sie es ändern? Wenn nein, warum nicht?</p>
+            <textarea rows="2" cols="50" name="changeExplanation" id="changeExplanation" class="uk-textarea"></textarea>
+          </div>
+          <div id="lastQuestion" class="uk-width-1-1">
+            <p id="relevanceQuestion" class="uk-text-bold">Wie relevant bezüglich Ihrer Privatsphäre finden Sie die dargestellte Information?</p>
+            <div id="relevance" name="relevance">
+              <div id="likertResponses">
+                <ul class="likert">
+                  <li>nicht relevant</li>
+                  <li><input <input class="uk-radio" id="radRelevantStart" type="radio" name="relevant" value="1" /></li>
+                  <li><input class="uk-radio" type="radio" name="relevant" value="2" /></li>
+                  <li><input class="uk-radio" type="radio" name="relevant" value="3" /></li>
+                  <li><input class="uk-radio" type="radio" name="relevant" value="4" /></li>
+                  <li><input class="uk-radio" type="radio" name="relevant" value="5" /></li>
+                  <li><input class="uk-radio" type="radio" name="relevant" value="6" /></li>
+                  <li><input <input class="uk-radio" id="radRelevantEnd" type="radio" name="relevant" value="7" /></li>
+                  <li>sehr relevant</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </form>
+        <button id="submitDiary" class="uk-button uk-button-default">Abschicken</button>
+      </div>
+    </div>
+
+  </div>

@@ -1,0 +1,62 @@
+.cppBox {
+  font-family: inherit;
+  font-size: 1em;
+  line-height: 1em;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 10px;
+  margin: auto;
+  width: 50%;
+  padding-top: 10px;
+  background: white;
+  border: solid;
+  border-color: #F18C00;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+#fbar {
+  position: inherit !important;
+}
+
+.cppBox img {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 50px;
+  margin: -25px;
+}
+
+.cppBox h3 {
+  margin-top: 1em !important;
+  margin-bottom: 0.2em !important;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 1.255;
+  color: black;
+}
+
+.cppBox p {
+  margin-top: 0px !important;
+}
+
+.cppBox li {
+  padding-bottom: 5px;
+  line-height: 1;
+  list-style: disc !important;
+}
+
+.cppBox ul {
+  margin-top: 0px !important;
+  padding-top: 0px;
+  color: black;
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  list-style-type: disc !important;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
