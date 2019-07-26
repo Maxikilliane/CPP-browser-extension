@@ -16,7 +16,7 @@ For Chrome:
 3. Click the "load unpacked" button and select the extension directory. 
 
 For Edge: 
-[TODO]
+Install it in the developer's options. See https://docs.microsoft.com/en-us/microsoft-edge/extensions/guides/adding-and-removing-extensions for a detailed description.
 
 During the usage of the plugin, a pop-up will appear repeatedly, asking for feedback on just seen CPPs. This is part of the logic of the diary study. Users can also give feedback using a browser toolbar icon. All data collected by this extension is saved on the user's computer, in the extension's local storage. 
 To read data from the local-storage on Firefox:
@@ -25,14 +25,14 @@ To read data from the local-storage on Firefox:
 3. Click on "Debugging" for the ContextualPP-extension – a separate window will open
 4. Select the console in that separate window.
 5. Enter the following code into the console and press "Enter" afterwards:
-
+```javascript
 window.browser.storage.local.get(null, function(items) {
 var blob = new Blob([JSON.stringify(items, null,' ')], {type: "text/plain"});
 var url = URL.createObjectURL(blob);
-window.browser.tabs.create({ url: url }); // requires that the extension has the "tabs" permission
-window.browser.downloads.download({ url: url }); // requires that the extension has the "downloads" permission
+window.browser.tabs.create({ url: url }); // extension has the "tabs" permission to make this work
+window.browser.downloads.download({ url: url }); // extension has the "downloads" permission to make this work
 });
-
+```
 This opens a separate tab in your browser and downloads the local-storage of the extension.
 6. In your Downloads-Folder there should be a document called "download" now. It probably doesn't have a file type, but this document is a .json-file, which contains the logdata, diary entries and feedback entries from the usage of the plugin.
 
