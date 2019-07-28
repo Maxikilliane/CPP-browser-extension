@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="cpp_settings.css" />
+  <!-- UIkit CSS -->
+  <link rel="stylesheet" href="../libraries/uikit.min.css"/>
+  </head>
+
+<body>
+  <div id="popup-content">
+    <div class="heading">
+      <img src="../icons/icon_bigger.png"></img>
+      <h3>ContextualPP</h3>
+    </div>
+    <hr>
+    <div>
+      <p>This browser plugin allows you to get information from the privacy statements of some websites you visit directly in your context of use: when your information is collected or processed.</p>
+    </div>
+
+    <div>
+      <div class="subheading">
+        <h4><span uk-icon="icon: comments; ratio: 1.3"></span>&nbsp;&nbsp;Feedback</h4>
+      </div>
+      <form name="feedbackForm">
+        <p>You can submit feedback on the plugin or contextual privacy statements on this form at any time.</p>
+        <div id="likertResponses">
+          <p class="uk-text-bold">How useful do you consider the contextual privacy statements?</p>
+          <ul class="likert">
+            <li>not useful</li>
+            <li><input <input class="uk-radio" id="radHelpfulStart" type="radio" name="Helpful" value="1" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="2" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="3" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="4" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="5" /></li>
+            <li><input class="uk-radio" type="radio" name="Helpful" value="6" /></li>
+            <li><input <input class="uk-radio" id="radHelpfulEnd" type="radio" name="Helpful" value="7" /></li>
+            <li>very useful</li>
+          </ul>
+        </div>
+        <div>
+          <p class="uk-text-bold">What problems did you have with the contextual privacy statements?</p>
+          <textarea class="uk-textarea" id="problem" name="problem" rows="3" cols="50" wrap="physical"></textarea>
+        </div>
+        <div>
+          <p class="uk-text-bold">What suggestions do you have for contextual privacy statements?</p>
+          <textarea class="uk-textarea" id="improvement" name="improvement" rows="3" cols="50" wrap="physical"></textarea>
+        </div>
+        <div>
+          <button type="button" id="feedbackButton" class="uk-button uk-button-default"><span uk-icon="mail"></span>&nbsp;&nbsp;Send feedback</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <div id="error-content" class="hidden">
+    <p>Entschuldigung, das Plugin funktioniert auf dieser Seite nicht.</p>
+  </div>
+  <script src="cpp_settings.js"></script>
+</body>
+
+</html>
