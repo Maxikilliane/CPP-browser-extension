@@ -1,6 +1,6 @@
 # CPP-browser-extension
 
-This is the English version of a browser extension we implemented for a diary study about contextual privacy policies (CPPs). CPPs are ...
+This is the English version of a browser extension we implemented for a diary study about contextual privacy policies (CPPs). CPPs embed relevant information from privacy policies directly in the user's current context of use.
 For further information about this study, please submit an issue or otherwise get in contact with the maintainers of this repository. We will gladly share our seminar paper with you.
 The extension is functional on Chrome, Firefox and Edge browsers. CPPs are displayed in different situations on 7 different websites: Google Search, Youtube, Facebook, Twitter, Ebay, Ebay Kleinanzeigen and Amazon. 
 
