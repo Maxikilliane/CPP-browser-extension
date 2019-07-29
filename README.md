@@ -8,7 +8,7 @@ The extension works on Chrome, Firefox and Edge browsers. CPPs are displayed in 
 
 ### For Firefox:
 There are two ways to try out the extension on Firefox.
-- You drag the .xpi file from this repository into any open browser window.
+- You drag the .xpi file (only for the German version) from this repository into any open browser window.
 - You install it in the developer's options. See https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Temporary_Installation_in_Firefox for a detailed description.
 
 ### For Chrome:
